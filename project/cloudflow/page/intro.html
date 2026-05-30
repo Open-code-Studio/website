@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudFlow 详细介绍 — Open Code Studio</title>
+  <link rel="icon" type="image/jpeg" href="../png/91686373-09E8-47F9-86B2-0ADECD55A458_1_201_a.jpeg">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div class="grid-bg"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="../../../page/index.html" class="nav-logo">
+        <img class="nav-logo-icon" src="../png/91686373-09E8-47F9-86B2-0ADECD55A458_1_201_a.jpeg" alt="OCS">
+        Open Code Studio
+      </a>
+      <button class="nav-toggle" aria-label="菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="../../../page/index.html">首页</a></li>
+        <li><a href="../../../page/projects.html" class="active">核心项目</a></li>
+        <li><a href="../../../page/entries.html">常用入口</a></li>
+        <li><a href="../../../page/about.html">关于我们</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="project-subnav">
+    <div class="project-subnav-inner">
+      <a href="index.html">项目主页</a>
+      <a href="intro.html" class="active">详细介绍</a>
+      <a href="download.html">下载</a>
+    </div>
+  </div>
+
+  <div class="project-hero fade-in">
+    <div class="project-hero-inner">
+      <div class="project-hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        详细介绍
+      </div>
+      <h1>关于 CloudFlow</h1>
+      <p class="project-subtitle">了解 CloudFlow 的诞生背景、架构设计与发展规划</p>
+    </div>
+  </div>
+
+  <div class="project-section fade-in">
+    <div class="project-section-inner">
+      <div class="project-section-header">
+        <span class="section-number">/ 诞生背景</span>
+        <h2>为什么打造 CloudFlow</h2>
+      </div>
+      <div class="project-description-block">
+        <p>服务器监控是运维工作中的核心环节。然而，现有的 Linux 监控工具往往面临两个极端：要么功能强大但配置复杂、学习曲线陡峭；要么界面简陋、可视化能力不足且缺乏跨平台支持。</p>
+        <p style="margin-top:20px">CloudFlow 的目标是填补这一空白。我们希望提供一款既具备企业级监控能力，又拥有现代、直观用户体验的工具。基于 Dart/Flutter 构建，CloudFlow 在保持高性能的同时，实现了桌面端与 Web 端的统一体验。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section fade-in" style="padding-top:0">
+    <div class="project-section-inner">
+      <div class="project-section-header">
+        <span class="section-number">/ 系统架构</span>
+        <h2>架构设计</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h4>数据采集层（Dart）</h4>
+          <p>基于 Dart 的高性能采集引擎，通过 systemd 接口和 /proc 文件系统获取系统指标，支持插件式扩展采集项。</p>
+        </div>
+        <div class="feature-card fade-in fade-in-delay-1">
+          <div class="feature-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <h4>存储层（InfluxDB）</h4>
+          <p>使用 InfluxDB 时序数据库存储监控数据，支持高效的数据写入与查询，自动数据保留策略。</p>
+        </div>
+        <div class="feature-card fade-in fade-in-delay-2">
+          <div class="feature-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h4>通信层（gRPC + WebSocket）</h4>
+          <p>采集端与控制端通过 gRPC 通信保障数据可靠传输，前端通过 WebSocket 获取实时数据流。</p>
+        </div>
+        <div class="feature-card fade-in fade-in-delay-3">
+          <div class="feature-card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </div>
+          <h4>展示层（Flutter）</h4>
+          <p>基于 Flutter 构建统一 UI，桌面端与 Web 端共享同一套代码，确保跨平台一致体验。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section fade-in" style="padding-top:0">
+    <div class="project-section-inner">
+      <div class="project-section-header">
+        <span class="section-number">/ 开发路线</span>
+        <h2>版本里程碑</h2>
+      </div>
+      <div class="project-description-block">
+        <p><strong>v0.1 Alpha</strong> — 基础监控面板，CPU/内存/磁盘实时数据展示</p>
+        <p style="margin-top:12px"><strong>v0.2 Beta</strong> — 自定义仪表盘编辑器，支持拖拽布局</p>
+        <p style="margin-top:12px"><strong>v0.3</strong> — 告警引擎上线，支持阈值告警和通知推送</p>
+        <p style="margin-top:12px"><strong>v0.4</strong> — 多服务器管理，支持采集端自动发现</p>
+        <p style="margin-top:12px"><strong>v0.5</strong> — 插件式数据采集，社区扩展能力开放</p>
+        <p style="margin-top:20px;color:var(--text-muted)">更多功能正在开发中...</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-divider"></div>
+
+  <div class="project-links-section fade-in">
+    <h2>探索更多</h2>
+    <div class="project-links-grid">
+      <a href="index.html" class="project-link-btn primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        项目主页
+      </a>
+      <a href="download.html" class="project-link-btn secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        下载
+      </a>
+      <a href="#" class="project-link-btn secondary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <a href="../../../page/index.html" class="footer-brand">
+        <img class="footer-brand-icon" src="../png/91686373-09E8-47F9-86B2-0ADECD55A458_1_201_a.jpeg" alt="OCS">
+        Open Code Studio
+      </a>
+      <p class="footer-tagline">一群热爱技术的学生团队，致力打造稳定高效的跨平台工具。</p>
+      <div class="footer-links">
+        <a href="https://github.com/Open-code-Studio" target="_blank">GitHub</a>
+        <a href="../../../page/about.html">关于我们</a>
+        <a href="#">加入交流群</a>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">&copy; 2026 Open Code Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
