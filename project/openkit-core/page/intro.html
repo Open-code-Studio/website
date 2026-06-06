@@ -20,25 +20,38 @@
         <img class="nav-logo-icon" src="../png/91686373-09E8-47F9-86B2-0ADECD55A458_1_201_a.jpeg" alt="OCS">
         Open Code Studio
       </a>
-      <button class="nav-toggle" aria-label="菜单">
+      <button class="nav-toggle" aria-label="菜单" data-i18n-aria="nav.menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="../../../page/index.html">首页</a></li>
-        <li><a href="../../../page/projects.html" class="active">核心项目</a></li>
-        <li><a href="../../../page/entries.html">常用入口</a></li>
-        <li><a href="../../../page/about.html">关于我们</a></li>
+        <li><a href="../../../page/index.html" data-i18n="nav.home">首页</a></li>
+        <li><a href="../../../page/projects.html" class="active" data-i18n="nav.projects">核心项目</a></li>
+        <li><a href="../../../page/entries.html" data-i18n="nav.entries">常用入口</a></li>
+        <li><a href="../../../page/about.html" data-i18n="nav.about">关于我们</a></li>
       </ul>
+      <div class="lang-switch-wrapper">
+        <button class="lang-switch" onclick="i18n.toggleLanguage()">EN</button>
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-item" data-lang="zh-CN" onclick="i18n.setLanguage('zh-CN')">
+            简体中文
+            <span class="lang-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          </button>
+          <button class="lang-dropdown-item" data-lang="en" onclick="i18n.setLanguage('en')">
+            English
+            <span class="lang-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          </button>
+        </div>
+      </div>
     </div>
   </nav>
 
   <div class="project-subnav">
     <div class="project-subnav-inner">
-      <a href="index.html">项目主页</a>
-      <a href="intro.html" class="active">详细介绍</a>
-      <a href="download.html">下载</a>
+      <a href="index.html" data-i18n="subnav.home">项目主页</a>
+      <a href="intro.html" class="active" data-i18n="subnav.intro">详细介绍</a>
+      <a href="download.html" data-i18n="subnav.download">下载</a>
     </div>
   </div>
 
@@ -46,22 +59,22 @@
     <div class="project-hero-inner">
       <div class="project-hero-badge">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        详细介绍
+        <span data-i18n="project.hero.intro">详细介绍</span>
       </div>
-      <h1>关于 OpenKit.Core</h1>
-      <p class="project-subtitle">了解 OpenKit.Core 的设计哲学、架构与模块划分</p>
+      <h1 data-i18n="openkit.intro.title">关于 OpenKit.Core</h1>
+      <p class="project-subtitle" data-i18n="openkit.intro.subtitle">了解 OpenKit.Core 的设计哲学、架构与模块划分</p>
     </div>
   </div>
 
   <div class="project-section fade-in">
     <div class="project-section-inner">
       <div class="project-section-header">
-        <span class="section-number">/ 设计哲学</span>
-        <h2>为什么打造 OpenKit.Core</h2>
+        <span class="section-number" data-i18n="openkit.intro.bgTitle">/ 设计哲学</span>
+        <h2 data-i18n="openkit.intro.bgHeading">为什么打造 OpenKit.Core</h2>
       </div>
       <div class="project-description-block">
-        <p>OpenKit.Core 诞生于团队在多项目开发中的重复劳动痛点。每个 TypeScript 项目都需要搭建 CLI 入口、配置管理、日志记录等基础设施，这些重复工作占据了大量的开发时间，且各项目的实现标准参差不齐。</p>
-        <p style="margin-top:20px">OpenKit.Core 的核心理念是"一次构建，随处复用"。我们将这些通用能力抽象为独立、可组合的模块，以统一的 API 设计和一致的开发体验提供给所有 Open Code Studio 内部项目及外部开发者使用。</p>
+        <p data-i18n="openkit.intro.bgP1">OpenKit.Core 诞生于团队在多项目开发中的重复劳动痛点。每个 TypeScript 项目都需要搭建 CLI 入口、配置管理、日志记录等基础设施，这些重复工作占据了大量的开发时间，且各项目的实现标准参差不齐。</p>
+        <p style="margin-top:20px" data-i18n="openkit.intro.bgP2">OpenKit.Core 的核心理念是"一次构建，随处复用"。我们将这些通用能力抽象为独立、可组合的模块，以统一的 API 设计和一致的开发体验提供给所有 Open Code Studio 内部项目及外部开发者使用。</p>
       </div>
     </div>
   </div>
@@ -69,37 +82,37 @@
   <div class="project-section fade-in" style="padding-top:0">
     <div class="project-section-inner">
       <div class="project-section-header">
-        <span class="section-number">/ 模块架构</span>
-        <h2>核心模块</h2>
+        <span class="section-number" data-i18n="openkit.intro.archTitle">/ 模块架构</span>
+        <h2 data-i18n="openkit.intro.archHeading">核心模块</h2>
       </div>
       <div class="features-grid">
         <div class="feature-card fade-in">
           <div class="feature-card-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17h16"/><path d="M4 21h16"/><path d="M4 13h16"/><path d="M10 9 8 5 12 3l4 2-2 4"/></svg>
           </div>
-          <h4>@openkit/cli</h4>
-          <p>命令行工具模块，基于 Commander 构建，提供子命令注册、参数解析、自动补全和友好的交互提示。</p>
+          <h4 data-i18n="openkit.intro.arch1Title">@openkit/cli</h4>
+          <p data-i18n="openkit.intro.arch1Desc">命令行工具模块，基于 Commander 构建，提供子命令注册、参数解析、自动补全和友好的交互提示。</p>
         </div>
         <div class="feature-card fade-in fade-in-delay-1">
           <div class="feature-card-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
           </div>
-          <h4>@openkit/config</h4>
-          <p>通用配置管理模块，支持多格式解析、环境变量覆盖、配置合并与 Schema 校验，返回类型安全的配置对象。</p>
+          <h4 data-i18n="openkit.intro.arch2Title">@openkit/config</h4>
+          <p data-i18n="openkit.intro.arch2Desc">通用配置管理模块，支持多格式解析、环境变量覆盖、配置合并与 Schema 校验，返回类型安全的配置对象。</p>
         </div>
         <div class="feature-card fade-in fade-in-delay-2">
           <div class="feature-card-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
           </div>
-          <h4>@openkit/logger</h4>
-          <p>结构化日志模块，基于 Winston 封装，支持多级别日志、自定义格式化、多输出目标（控制台、文件、远程）和上下文追踪。</p>
+          <h4 data-i18n="openkit.intro.arch3Title">@openkit/logger</h4>
+          <p data-i18n="openkit.intro.arch3Desc">结构化日志模块，基于 Winston 封装，支持多级别日志、自定义格式化、多输出目标（控制台、文件、远程）和上下文追踪。</p>
         </div>
         <div class="feature-card fade-in fade-in-delay-3">
           <div class="feature-card-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
           </div>
-          <h4>@openkit/plugin</h4>
-          <p>插件系统模块，提供插件注册、生命周期管理、依赖注入和钩子系统，支持在应用启动、命令执行等阶段插入自定义逻辑。</p>
+          <h4 data-i18n="openkit.intro.arch4Title">@openkit/plugin</h4>
+          <p data-i18n="openkit.intro.arch4Desc">插件系统模块，提供插件注册、生命周期管理、依赖注入和钩子系统，支持在应用启动、命令执行等阶段插入自定义逻辑。</p>
         </div>
       </div>
     </div>
@@ -108,16 +121,16 @@
   <div class="project-section fade-in" style="padding-top:0">
     <div class="project-section-inner">
       <div class="project-section-header">
-        <span class="section-number">/ 开发路线</span>
-        <h2>版本里程碑</h2>
+        <span class="section-number" data-i18n="openkit.intro.roadmapTitle">/ 开发路线</span>
+        <h2 data-i18n="openkit.intro.roadmapHeading">版本里程碑</h2>
       </div>
       <div class="project-description-block">
-        <p><strong>v0.1</strong> — CLI 脚手架与基础配置解析</p>
-        <p style="margin-top:12px"><strong>v0.2</strong> — 日志系统上线，支持多输出目标</p>
-        <p style="margin-top:12px"><strong>v0.3</strong> — 插件系统开放，支持生命周期钩子</p>
-        <p style="margin-top:12px"><strong>v0.4</strong> — 配置格式扩展（TOML 支持）和配置热更新</p>
-        <p style="margin-top:12px"><strong>v0.5</strong> — 性能优化与 API 稳定性加固</p>
-        <p style="margin-top:20px;color:var(--text-muted)">更多模块正在规划中...</p>
+        <p data-i18n="openkit.intro.roadmapV1"><strong>v0.1</strong> — CLI 脚手架与基础配置解析</p>
+        <p style="margin-top:12px" data-i18n="openkit.intro.roadmapV2"><strong>v0.2</strong> — 日志系统上线，支持多输出目标</p>
+        <p style="margin-top:12px" data-i18n="openkit.intro.roadmapV3"><strong>v0.3</strong> — 插件系统开放，支持生命周期钩子</p>
+        <p style="margin-top:12px" data-i18n="openkit.intro.roadmapV4"><strong>v0.4</strong> — 配置格式扩展（TOML 支持）和配置热更新</p>
+        <p style="margin-top:12px" data-i18n="openkit.intro.roadmapV5"><strong>v0.5</strong> — 性能优化与 API 稳定性加固</p>
+        <p style="margin-top:20px;color:var(--text-muted)" data-i18n="openkit.intro.roadmapMore">更多模块正在规划中...</p>
       </div>
     </div>
   </div>
@@ -125,17 +138,17 @@
   <div class="project-divider"></div>
 
   <div class="project-links-section fade-in">
-    <h2>探索更多</h2>
+    <h2 data-i18n="project.section.more">探索更多</h2>
     <div class="project-links-grid">
-      <a href="index.html" class="project-link-btn primary">
+      <a href="index.html" class="project-link-btn primary" data-i18n="project.btn.projectHome">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
         项目主页
       </a>
-      <a href="download.html" class="project-link-btn secondary">
+      <a href="download.html" class="project-link-btn secondary" data-i18n="project.btn.download">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         下载
       </a>
-      <a href="#" class="project-link-btn secondary">
+      <a href="#" class="project-link-btn secondary" data-i18n="project.btn.github">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
         GitHub
       </a>
@@ -148,17 +161,18 @@
         <img class="footer-brand-icon" src="../png/91686373-09E8-47F9-86B2-0ADECD55A458_1_201_a.jpeg" alt="OCS">
         Open Code Studio
       </a>
-      <p class="footer-tagline">一群热爱技术的学生团队，致力打造稳定高效的跨平台工具。</p>
+      <p class="footer-tagline" data-i18n="footer.tagline">一群热爱技术的学生团队，致力打造稳定高效的跨平台工具。</p>
       <div class="footer-links">
-        <a href="https://github.com/Open-code-Studio" target="_blank">GitHub</a>
-        <a href="../../../page/about.html">关于我们</a>
-        <a href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,KlQMYlUzoqLhQNC77XGTSe56HIx+OQyY2kmQpiaFEFmdR7ksupjDEA==&amp;_dt_no_comment=1&amp;origin=11" target="_blank">加入交流群</a>
+        <a href="https://github.com/Open-code-Studio" target="_blank" data-i18n="footer.github">GitHub</a>
+        <a href="../../../page/about.html" data-i18n="footer.about">关于我们</a>
+        <a href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,KlQMYlUzoqLhQNC77XGTSe56HIx+OQyY2kmQpiaFEFmdR7ksupjDEA==&amp;_dt_no_comment=1&amp;origin=11" target="_blank" data-i18n="footer.joinGroup">加入交流群</a>
       </div>
       <div class="footer-divider"></div>
       <p class="footer-copy">&copy; 2026 Open Code Studio. All rights reserved.</p>
     </div>
   </footer>
 
+  <script src="../js/i18n.js"></script>
   <script src="../js/script.js"></script>
 </body>
 </html>
