@@ -20,40 +20,53 @@
         <img class="nav-logo-icon" src="../png/91686373-09E8-47F9-86B2-0ADECD55A458_1_201_a.jpeg" alt="OCS">
         Open Code Studio
       </a>
-      <button class="nav-toggle" aria-label="菜单">
+      <button class="nav-toggle" aria-label="菜单" data-i18n-aria="nav.menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">首页</a></li>
-        <li><a href="projects.html">核心项目</a></li>
-        <li><a href="entries.html">常用入口</a></li>
-        <li><a href="about.html">关于我们</a></li>
+        <li><a href="index.html" class="active" data-i18n="nav.home">首页</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">核心项目</a></li>
+        <li><a href="entries.html" data-i18n="nav.entries">常用入口</a></li>
+        <li><a href="about.html" data-i18n="nav.about">关于我们</a></li>
       </ul>
+      <div class="lang-switch-wrapper">
+        <button class="lang-switch" onclick="i18n.toggleLanguage()">EN</button>
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-item" data-lang="zh-CN" onclick="i18n.setLanguage('zh-CN')">
+            简体中文
+            <span class="lang-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          </button>
+          <button class="lang-dropdown-item" data-lang="en" onclick="i18n.setLanguage('en')">
+            English
+            <span class="lang-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          </button>
+        </div>
+      </div>
     </div>
   </nav>
 
   <section class="hero" id="hero">
     <div class="hero-tag fade-in">
       <span class="hero-tag-dot"></span>
-      打造稳定的工具，软件
+      <span data-i18n="hero.tag">打造稳定的工具，软件</span>
     </div>
-    <h1 class="fade-in fade-in-delay-1">
+    <h1 class="fade-in fade-in-delay-1" data-i18n-html="hero.title">
       为热爱打造<br>
       <span class="gradient-text">极简</span> 的<br>
       工具生态
     </h1>
-    <p class="fade-in fade-in-delay-2">
+    <p class="fade-in fade-in-delay-2" data-i18n="hero.desc">
       源自于对优秀开发体验的追求。我们致力于构建跨平台、高质量的
       开源工具与框架，让技术创造更简单。
     </p>
     <div class="hero-actions fade-in fade-in-delay-3">
-      <a href="projects.html" class="btn btn-primary">
+      <a href="projects.html" class="btn btn-primary" data-i18n="hero.viewProjects">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
         查看项目
       </a>
-      <a href="https://github.com/Open-code-Studio" target="_blank" class="btn btn-secondary">
+      <a href="https://github.com/Open-code-Studio" target="_blank" class="btn btn-secondary" data-i18n="hero.githubOrg">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
         GitHub 组织
       </a>
@@ -65,8 +78,8 @@
       <span class="tech-badge">Java</span>
       <span class="tech-badge">C++</span>
       <span class="tech-badge">TypeScript</span>
-      <span class="tech-badge">跨平台</span>
-      <span class="tech-badge">开源</span>
+      <span class="tech-badge" data-i18n="hero.techCross">跨平台</span>
+      <span class="tech-badge" data-i18n="hero.techOpen">开源</span>
     </div>
   </section>
 
@@ -76,17 +89,18 @@
         <img class="footer-brand-icon" src="../png/91686373-09E8-47F9-86B2-0ADECD55A458_1_201_a.jpeg" alt="OCS">
         Open Code Studio
       </a>
-      <p class="footer-tagline">一群热爱技术的学生团队,喜欢制作应用,游戏和MC地图。</p>  
+      <p class="footer-tagline" data-i18n="footer.tagline">一群热爱技术的学生团队,喜欢制作应用,游戏和MC地图。</p>  
       <div class="footer-links">
         <a href="https://github.com/Open-code-Studio" target="_blank">GitHub</a>
-        <a href="about.html">关于我们</a>
-        <a href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,KlQMYlUzoqLhQNC77XGTSe56HIx+OQyY2kmQpiaFEFmdR7ksupjDEA==&amp;_dt_no_comment=1&amp;origin=11" target="_blank">加入交流群</a>
+        <a href="about.html" data-i18n="footer.about">关于我们</a>
+        <a href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,KlQMYlUzoqLhQNC77XGTSe56HIx+OQyY2kmQpiaFEFmdR7ksupjDEA==&amp;_dt_no_comment=1&amp;origin=11" target="_blank" data-i18n="footer.joinGroup">加入交流群</a>
       </div>
       <div class="footer-divider"></div>
       <p class="footer-copy">&copy; 2026 Open Code Studio. All rights reserved.</p>
     </div>
   </footer>
 
+  <script src="../js/i18n.js"></script>
   <script src="../js/script.js"></script>
 </body>
 </html>

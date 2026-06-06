@@ -20,89 +20,102 @@
         <img class="nav-logo-icon" src="../png/91686373-09E8-47F9-86B2-0ADECD55A458_1_201_a.jpeg" alt="OCS">
         Open Code Studio
       </a>
-      <button class="nav-toggle" aria-label="菜单">
+      <button class="nav-toggle" aria-label="菜单" data-i18n-aria="nav.menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="index.html">首页</a></li>
-        <li><a href="projects.html" class="active">核心项目</a></li>
-        <li><a href="entries.html">常用入口</a></li>
-        <li><a href="about.html">关于我们</a></li>
+        <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+        <li><a href="projects.html" class="active" data-i18n="nav.projects">核心项目</a></li>
+        <li><a href="entries.html" data-i18n="nav.entries">常用入口</a></li>
+        <li><a href="about.html" data-i18n="nav.about">关于我们</a></li>
       </ul>
+      <div class="lang-switch-wrapper">
+        <button class="lang-switch" onclick="i18n.toggleLanguage()">EN</button>
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-item" data-lang="zh-CN" onclick="i18n.setLanguage('zh-CN')">
+            简体中文
+            <span class="lang-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          </button>
+          <button class="lang-dropdown-item" data-lang="en" onclick="i18n.setLanguage('en')">
+            English
+            <span class="lang-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          </button>
+        </div>
+      </div>
     </div>
   </nav>
 
   <div class="page-content">
     <section id="projects">
       <div class="section-header fade-in">
-        <span class="section-number">/ 01</span>
-        <h2>核心项目</h2>
-        <p>我们正在开发和维护的项目</p>
+        <span class="section-number" data-i18n="projects.number">/ 01</span>
+        <h2 data-i18n="projects.title">核心项目</h2>
+        <p data-i18n="projects.desc">我们正在开发和维护的项目</p>
       </div>
       <div class="projects-grid">
         <div class="project-card fade-in">
           <div class="project-card-header">
-            <h3>CodeApp</h3>
-            <span class="project-status status-active">
+            <h3 data-i18n="project.codeapp.name">CodeApp</h3>
+            <span class="project-status status-active" data-i18n="projects.status.active">
               <span style="width:5px;height:5px;background:currentColor;border-radius:50%;display:inline-block;"></span>
               持续更新
             </span>
           </div>
-          <p>面向开发者的现代化代码编写平台，支持实时协同编辑与自动化工作流管理，助力团队高效交付。</p>
+          <p data-i18n="project.codeapp.desc">面向开发者的现代化代码编写平台，支持实时协同编辑与自动化工作流管理，助力团队高效交付。</p>
           <div class="project-card-links">
-            <a href="../project/codeapp/page/index.html" class="project-link project-link-primary">项目页</a>
-            <a href="../project/codeapp/page/download.html" class="project-link project-link-secondary">下载</a>
-            <a href="#" class="project-link project-link-secondary">GitHub</a>
+            <a href="../project/codeapp/page/index.html" class="project-link project-link-primary" data-i18n="projects.link.page">项目页</a>
+            <a href="../project/codeapp/page/download.html" class="project-link project-link-secondary" data-i18n="projects.link.download">下载</a>
+            <a href="#" class="project-link project-link-secondary" data-i18n="projects.link.github">GitHub</a>
           </div>
         </div>
 
         <div class="project-card fade-in fade-in-delay-1">
           <div class="project-card-header">
-            <h3>OpenKit.Core</h3>
-            <span class="project-status status-active">
+            <h3 data-i18n="project.openkit.name">OpenKit.Core</h3>
+            <span class="project-status status-active" data-i18n="projects.status.active">
               <span style="width:5px;height:5px;background:currentColor;border-radius:50%;display:inline-block;"></span>
               持续更新
             </span>
           </div>
-          <p>TypeScript 生态的工具链核心库，提供 CLI 脚手架、配置解析、日志系统等基础能力，为其他项目提供底层支持。</p>
+          <p data-i18n="project.openkit.desc">TypeScript 生态的工具链核心库，提供 CLI 脚手架、配置解析、日志系统等基础能力，为其他项目提供底层支持。</p>
           <div class="project-card-links">
-            <a href="../project/openkit-core/page/index.html" class="project-link project-link-primary">项目页</a>
-            <a href="../project/openkit-core/page/download.html" class="project-link project-link-secondary">下载</a>
-            <a href="#" class="project-link project-link-secondary">GitHub</a>
+            <a href="../project/openkit-core/page/index.html" class="project-link project-link-primary" data-i18n="projects.link.page">项目页</a>
+            <a href="../project/openkit-core/page/download.html" class="project-link project-link-secondary" data-i18n="projects.link.download">下载</a>
+            <a href="#" class="project-link project-link-secondary" data-i18n="projects.link.github">GitHub</a>
           </div>
         </div>
 
         <div class="project-card fade-in fade-in-delay-2">
           <div class="project-card-header">
-            <h3>CloudFlow</h3>
-            <span class="project-status status-active">
+            <h3 data-i18n="project.cloudflow.name">CloudFlow</h3>
+            <span class="project-status status-active" data-i18n="projects.status.active">
               <span style="width:5px;height:5px;background:currentColor;border-radius:50%;display:inline-block;"></span>
               持续更新
             </span>
           </div>
-          <p>跨平台 Linux 实时数据监控面板，基于 Dart 构建高性能后端，支持自定义仪表盘与告警规则，强调一致体验。</p>
+          <p data-i18n="project.cloudflow.desc">跨平台 Linux 实时数据监控面板，基于 Dart 构建高性能后端，支持自定义仪表盘与告警规则，强调一致体验。</p>
           <div class="project-card-links">
-            <a href="../project/cloudflow/page/index.html" class="project-link project-link-primary">项目页</a>
-            <a href="../project/cloudflow/page/download.html" class="project-link project-link-secondary">下载</a>
-            <a href="#" class="project-link project-link-secondary">GitHub</a>
+            <a href="../project/cloudflow/page/index.html" class="project-link project-link-primary" data-i18n="projects.link.page">项目页</a>
+            <a href="../project/cloudflow/page/download.html" class="project-link project-link-secondary" data-i18n="projects.link.download">下载</a>
+            <a href="#" class="project-link project-link-secondary" data-i18n="projects.link.github">GitHub</a>
           </div>
         </div>
 
         <div class="project-card fade-in fade-in-delay-3">
           <div class="project-card-header">
-            <h3>JMCL</h3>
-            <span class="project-status status-active">
+            <h3 data-i18n="project.jmcl.name">JMCL</h3>
+            <span class="project-status status-active" data-i18n="projects.status.active">
               <span style="width:5px;height:5px;background:currentColor;border-radius:50%;display:inline-block;"></span>
               持续更新
             </span>
           </div>
-          <p>轻量级跨平台 Minecraft 启动器，基于 Java 构建，支持多版本管理、Mod 加载与一键启动，提供简洁高效的游戏体验。</p>
+          <p data-i18n="project.jmcl.desc">轻量级跨平台 Minecraft 启动器，基于 Java 构建，支持多版本管理、Mod 加载与一键启动，提供简洁高效的游戏体验。</p>
           <div class="project-card-links">
-            <a href="../project/jmcl/page/index.html" class="project-link project-link-primary">项目页</a>
-            <a href="../project/jmcl/page/download.html" class="project-link project-link-secondary">下载</a>
-            <a href="https://github.com/Open-code-Studio/JMCL" class="project-link project-link-secondary" target="_blank">GitHub</a>
+            <a href="../project/jmcl/page/index.html" class="project-link project-link-primary" data-i18n="projects.link.page">项目页</a>
+            <a href="../project/jmcl/page/download.html" class="project-link project-link-secondary" data-i18n="projects.link.download">下载</a>
+            <a href="https://github.com/Open-code-Studio/JMCL" class="project-link project-link-secondary" target="_blank" data-i18n="projects.link.github">GitHub</a>
           </div>
         </div>
       </div>
@@ -115,17 +128,18 @@
         <img class="footer-brand-icon" src="../png/91686373-09E8-47F9-86B2-0ADECD55A458_1_201_a.jpeg" alt="OCS">
         Open Code Studio
       </a>
-      <p class="footer-tagline">一群热爱技术的学生团队,喜欢制作应用,游戏和MC地图。</p>  
+      <p class="footer-tagline" data-i18n="footer.tagline">一群热爱技术的学生团队,喜欢制作应用,游戏和MC地图。</p>  
       <div class="footer-links">
         <a href="https://github.com/Open-code-Studio" target="_blank">GitHub</a>
-        <a href="about.html">关于我们</a>
-        <a href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,KlQMYlUzoqLhQNC77XGTSe56HIx+OQyY2kmQpiaFEFmdR7ksupjDEA==&amp;_dt_no_comment=1&amp;origin=11" target="_blank">加入交流群</a>
+        <a href="about.html" data-i18n="footer.about">关于我们</a>
+        <a href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,KlQMYlUzoqLhQNC77XGTSe56HIx+OQyY2kmQpiaFEFmdR7ksupjDEA==&amp;_dt_no_comment=1&amp;origin=11" target="_blank" data-i18n="footer.joinGroup">加入交流群</a>
       </div>
       <div class="footer-divider"></div>
       <p class="footer-copy">&copy; 2026 Open Code Studio. All rights reserved.</p>
     </div>
   </footer>
 
+  <script src="../js/i18n.js"></script>
   <script src="../js/script.js"></script>
 </body>
 </html>

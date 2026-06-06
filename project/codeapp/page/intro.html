@@ -20,48 +20,61 @@
         <img class="nav-logo-icon" src="../png/91686373-09E8-47F9-86B2-0ADECD55A458_1_201_a.jpeg" alt="OCS">
         Open Code Studio
       </a>
-      <button class="nav-toggle" aria-label="菜单">
+      <button class="nav-toggle" aria-label="菜单" data-i18n-aria="nav.menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="../../../page/index.html">首页</a></li>
-        <li><a href="../../../page/projects.html" class="active">核心项目</a></li>
-        <li><a href="../../../page/entries.html">常用入口</a></li>
-        <li><a href="../../../page/about.html">关于我们</a></li>
+        <li><a href="../../../page/index.html" data-i18n="nav.home">首页</a></li>
+        <li><a href="../../../page/projects.html" class="active" data-i18n="nav.projects">核心项目</a></li>
+        <li><a href="../../../page/entries.html" data-i18n="nav.entries">常用入口</a></li>
+        <li><a href="../../../page/about.html" data-i18n="nav.about">关于我们</a></li>
       </ul>
+      <div class="lang-switch-wrapper">
+        <button class="lang-switch" onclick="i18n.toggleLanguage()">EN</button>
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-item" data-lang="zh-CN" onclick="i18n.setLanguage('zh-CN')">
+            简体中文
+            <span class="lang-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          </button>
+          <button class="lang-dropdown-item" data-lang="en" onclick="i18n.setLanguage('en')">
+            English
+            <span class="lang-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+          </button>
+        </div>
+      </div>
     </div>
   </nav>
 
   <div class="project-subnav">
     <div class="project-subnav-inner">
-      <a href="index.html">项目主页</a>
-      <a href="intro.html" class="active">详细介绍</a>
-      <a href="download.html">下载</a>
+      <a href="index.html" data-i18n="subnav.home">项目主页</a>
+      <a href="intro.html" class="active" data-i18n="subnav.intro">详细介绍</a>
+      <a href="download.html" data-i18n="subnav.download">下载</a>
     </div>
   </div>
 
   <div class="project-hero fade-in">
     <div class="project-hero-inner">
       <div class="project-hero-badge">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-        详细介绍
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <span data-i18n="project.hero.intro">详细介绍</span>
       </div>
-      <h1>关于 CodeApp</h1>
-      <p class="project-subtitle">了解 CodeApp 的设计理念、架构与开发历程</p>
+      <h1 data-i18n="codeapp.intro.title">关于 CodeApp</h1>
+      <p class="project-subtitle" data-i18n="codeapp.intro.subtitle">了解 CodeApp 的设计理念、架构与开发历程</p>
     </div>
   </div>
 
   <div class="project-section fade-in">
     <div class="project-section-inner">
       <div class="project-section-header">
-        <span class="section-number">/ 设计理念</span>
-        <h2>为什么打造 CodeApp</h2>
+        <span class="section-number" data-i18n="codeapp.intro.bgTitle">/ 设计理念</span>
+        <h2 data-i18n="codeapp.intro.bgHeading">为什么打造 CodeApp</h2>
       </div>
       <div class="project-description-block">
-        <p>CodeApp 源于对开发效率的极致追求。在现代软件开发中，开发者需要在多个工具之间频繁切换——编辑器、终端、版本控制、CI/CD 面板。这种碎片化的工具链不仅打断了开发流（Flow State），还增加了上下文切换的成本。</p>
-        <p style="margin-top:20px">CodeApp 的核心理念是"一个平台，全流程覆盖"。我们将代码编辑、协同协作、自动化工作流整合到统一的界面中，让开发者无需离开编辑器即可完成从编码到部署的完整流程。</p>
+        <p data-i18n="codeapp.intro.bgP1">CodeApp 源于对开发效率的极致追求。在现代软件开发中，开发者需要在多个工具之间频繁切换——编辑器、终端、版本控制、CI/CD 面板。这种碎片化的工具链不仅打断了开发流（Flow State），还增加了上下文切换的成本。</p>
+        <p style="margin-top:20px" data-i18n="codeapp.intro.bgP2">CodeApp 的核心理念是"一个平台，全流程覆盖"。我们将代码编辑、协同协作、自动化工作流整合到统一的界面中，让开发者无需离开编辑器即可完成从编码到部署的完整流程。</p>
       </div>
     </div>
   </div>
@@ -69,37 +82,37 @@
   <div class="project-section fade-in" style="padding-top:0">
     <div class="project-section-inner">
       <div class="project-section-header">
-        <span class="section-number">/ 架构概览</span>
-        <h2>系统架构</h2>
+        <span class="section-number" data-i18n="codeapp.intro.archTitle">/ 架构概览</span>
+        <h2 data-i18n="codeapp.intro.archHeading">系统架构</h2>
       </div>
       <div class="features-grid">
         <div class="feature-card fade-in">
           <div class="feature-card-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
-          <h4>桌面层（Electron）</h4>
-          <p>基于 Electron 构建跨平台桌面应用，提供原生级的文件系统访问、系统托盘、窗口管理等功能。</p>
+          <h4 data-i18n="codeapp.intro.arch1Title">桌面层（Electron）</h4>
+          <p data-i18n="codeapp.intro.arch1Desc">基于 Electron 构建跨平台桌面应用，提供原生级的文件系统访问、系统托盘、窗口管理等功能。</p>
         </div>
         <div class="feature-card fade-in fade-in-delay-1">
           <div class="feature-card-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
           </div>
-          <h4>前端层（React）</h4>
-          <p>使用 React 构建高性能 UI，配合虚拟列表和代码分割技术，确保大型项目下的流畅体验。</p>
+          <h4 data-i18n="codeapp.intro.arch2Title">前端层（React）</h4>
+          <p data-i18n="codeapp.intro.arch2Desc">使用 React 构建高性能 UI，配合虚拟列表和代码分割技术，确保大型项目下的流畅体验。</p>
         </div>
         <div class="feature-card fade-in fade-in-delay-2">
           <div class="feature-card-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
           </div>
-          <h4>服务层（Node.js）</h4>
-          <p>后端服务基于 Node.js，处理协作同步、工作流调度、插件管理，支持水平扩展。</p>
+          <h4 data-i18n="codeapp.intro.arch3Title">服务层（Node.js）</h4>
+          <p data-i18n="codeapp.intro.arch3Desc">后端服务基于 Node.js，处理协作同步、工作流调度、插件管理，支持水平扩展。</p>
         </div>
         <div class="feature-card fade-in fade-in-delay-3">
           <div class="feature-card-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           </div>
-          <h4>协议层（LSP + OT）</h4>
-          <p>集成语言服务器协议实现智能编辑能力，操作转换算法保障多人协作的数据一致性。</p>
+          <h4 data-i18n="codeapp.intro.arch4Title">协议层（LSP + OT）</h4>
+          <p data-i18n="codeapp.intro.arch4Desc">集成语言服务器协议实现智能编辑能力，操作转换算法保障多人协作的数据一致性。</p>
         </div>
       </div>
     </div>
@@ -108,16 +121,16 @@
   <div class="project-section fade-in" style="padding-top:0">
     <div class="project-section-inner">
       <div class="project-section-header">
-        <span class="section-number">/ 开发路线</span>
-        <h2>版本里程碑</h2>
+        <span class="section-number" data-i18n="codeapp.intro.roadmapTitle">/ 开发路线</span>
+        <h2 data-i18n="codeapp.intro.roadmapHeading">版本里程碑</h2>
       </div>
       <div class="project-description-block">
-        <p><strong>v0.1 Alpha</strong> — 基础编辑器核心，单文件编辑与语法高亮</p>
-        <p style="margin-top:12px"><strong>v0.2 Beta</strong> — 引入 LSP 支持，实现代码补全和诊断</p>
-        <p style="margin-top:12px"><strong>v0.3</strong> — 协同编辑引擎上线，支持多人实时协作</p>
-        <p style="margin-top:12px"><strong>v0.4</strong> — 工作流自动化引擎，CI/CD 集成</p>
-        <p style="margin-top:12px"><strong>v0.5</strong> — 插件系统开放，支持社区扩展</p>
-        <p style="margin-top:20px;color:var(--text-muted)">更多新特性正在开发中...</p>
+        <p data-i18n="codeapp.intro.roadmapV1"><strong>v0.1 Alpha</strong> — 基础编辑器核心，单文件编辑与语法高亮</p>
+        <p style="margin-top:12px" data-i18n="codeapp.intro.roadmapV2"><strong>v0.2 Beta</strong> — 引入 LSP 支持，实现代码补全和诊断</p>
+        <p style="margin-top:12px" data-i18n="codeapp.intro.roadmapV3"><strong>v0.3</strong> — 协同编辑引擎上线，支持多人实时协作</p>
+        <p style="margin-top:12px" data-i18n="codeapp.intro.roadmapV4"><strong>v0.4</strong> — 工作流自动化引擎，CI/CD 集成</p>
+        <p style="margin-top:12px" data-i18n="codeapp.intro.roadmapV5"><strong>v0.5</strong> — 插件系统开放，支持社区扩展</p>
+        <p style="margin-top:20px;color:var(--text-muted)" data-i18n="codeapp.intro.roadmapMore">更多新特性正在开发中...</p>
       </div>
     </div>
   </div>
@@ -125,17 +138,17 @@
   <div class="project-divider"></div>
 
   <div class="project-links-section fade-in">
-    <h2>探索更多</h2>
+    <h2 data-i18n="project.section.more">探索更多</h2>
     <div class="project-links-grid">
-      <a href="index.html" class="project-link-btn primary">
+      <a href="index.html" class="project-link-btn primary" data-i18n="project.btn.projectHome">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
         项目主页
       </a>
-      <a href="download.html" class="project-link-btn secondary">
+      <a href="download.html" class="project-link-btn secondary" data-i18n="project.btn.download">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         下载
       </a>
-      <a href="#" class="project-link-btn secondary">
+      <a href="#" class="project-link-btn secondary" data-i18n="project.btn.github">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
         GitHub
       </a>
@@ -148,17 +161,18 @@
         <img class="footer-brand-icon" src="../png/91686373-09E8-47F9-86B2-0ADECD55A458_1_201_a.jpeg" alt="OCS">
         Open Code Studio
       </a>
-      <p class="footer-tagline">一群热爱技术的学生团队，致力打造稳定高效的跨平台工具。</p>
+      <p class="footer-tagline" data-i18n="footer.tagline">一群热爱技术的学生团队，致力打造稳定高效的跨平台工具。</p>
       <div class="footer-links">
-        <a href="https://github.com/Open-code-Studio" target="_blank">GitHub</a>
-        <a href="../../../page/about.html">关于我们</a>
-        <a href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,KlQMYlUzoqLhQNC77XGTSe56HIx+OQyY2kmQpiaFEFmdR7ksupjDEA==&amp;_dt_no_comment=1&amp;origin=11" target="_blank">加入交流群</a>
+        <a href="https://github.com/Open-code-Studio" target="_blank" data-i18n="footer.github">GitHub</a>
+        <a href="../../../page/about.html" data-i18n="footer.about">关于我们</a>
+        <a href="https://qr.dingtalk.com/action/joingroup?code=v1,k1,KlQMYlUzoqLhQNC77XGTSe56HIx+OQyY2kmQpiaFEFmdR7ksupjDEA==&amp;_dt_no_comment=1&amp;origin=11" target="_blank" data-i18n="footer.joinGroup">加入交流群</a>
       </div>
       <div class="footer-divider"></div>
       <p class="footer-copy">&copy; 2026 Open Code Studio. All rights reserved.</p>
     </div>
   </footer>
 
+  <script src="../js/i18n.js"></script>
   <script src="../js/script.js"></script>
 </body>
 </html>

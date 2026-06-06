@@ -33,3 +33,12 @@ window.addEventListener('scroll', () => {
     nav.style.borderColor = 'rgba(79, 140, 255, 0.12)';
   }
 }, { passive: true });
+
+/* ─── Language switch dropdown ─── */
+document.addEventListener('click', (e) => {
+  const dropdown = document.querySelector('.lang-dropdown');
+  const btn = document.querySelector('.lang-switch');
+  if (dropdown && btn && !btn.contains(e.target) && !dropdown.contains(e.target)) {
+    dropdown.classList.remove('open');
+  }
+});
