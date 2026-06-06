@@ -92,6 +92,8 @@ const i18n = (() => {
       'project.section.techDesc': '采用的技术生态',
       'project.section.more': '了解更多',
       'project.section.help': '获取帮助',
+      'project.section.latestVersion': '/ 最新版本',
+      'project.section.requirements': '/ 系统要求',
 
       'project.btn.intro': '详细介绍',
       'project.btn.download': '下载',
@@ -144,6 +146,8 @@ const i18n = (() => {
       'codeapp.download.req1': '操作系统：Windows 10+ / macOS 12+ / Linux (内核 5.0+)',
       'codeapp.download.req2': '内存：最低 4GB（推荐 8GB）',
       'codeapp.download.req3': '磁盘：至少 500MB 可用空间',
+      'codeapp.download.req4': '网络：协作功能需要稳定的互联网连接',
+      'codeapp.download.reqTitle': '运行环境',
 
       /* ─── CodeApp 主页特性 ─── */
       'codeapp.feature1Title': '实时协同',
@@ -186,12 +190,16 @@ const i18n = (() => {
       'openkit.intro.roadmapV4': 'v2.0 — 跨运行时支持（Node.js / Deno / Bun）',
       'openkit.intro.roadmapMore': '更多新特性正在规划中...',
 
-      'openkit.download.title': '下载 OpenKit.Core',
-      'openkit.download.subtitle': '通过 npm 安装或下载独立 CLI 工具',
+      'openkit.download.title': '安装 OpenKit.Core',
+      'openkit.download.subtitle': '通过 npm 快速安装，即刻为你的项目注入核心能力',
+      'openkit.download.versionDesc': '2026 年 5 月发布 ｜ 性能优化与 API 稳定性加固',
       'openkit.download.npm': 'npm 安装',
       'openkit.download.npmDesc': '在项目中使用 OpenKit.Core',
       'openkit.download.npmBtn': 'npm install @open-kit/core',
       'openkit.download.cli': '独立 CLI',
+      'openkit.download.cliTitle': '独立 CLI 工具',
+      'openkit.download.cliDesc': '全局安装后可直接使用 openkit 命令',
+      'openkit.download.cliBtn': 'npm install -g @open-kit/cli',
       'openkit.download.cliDesc': '全局安装命令行工具',
       'openkit.download.cliBtn': 'npm install -g @open-kit/cli',
       'openkit.download.source': '源码构建',
@@ -201,6 +209,8 @@ const i18n = (() => {
       'openkit.download.req1': '运行时：Node.js 18+（推荐 20 LTS）',
       'openkit.download.req2': '包管理器：npm 9+ / pnpm 8+ / yarn 3+',
       'openkit.download.req3': 'TypeScript：4.9+（使用类型定义时）',
+      'openkit.download.req4': '操作系统：Windows / macOS / Linux 均可',
+      'openkit.download.reqTitle': '运行环境',
 
       /* ─── OpenKit.Core 主页特性 ─── */
       'openkit.feature1Title': 'CLI 脚手架',
@@ -247,18 +257,24 @@ const i18n = (() => {
       'cloudflow.download.title': '下载 CloudFlow',
       'cloudflow.download.subtitle': '选择适合你环境的方式部署 CloudFlow',
       'cloudflow.download.linuxAmd': 'Linux (x86_64)',
+      'cloudflow.download.linuxAmdTitle': 'Linux (x86_64)',
       'cloudflow.download.linuxAmdDesc': 'Ubuntu / Debian / CentOS',
       'cloudflow.download.linuxAmdBtn': '下载 (.tar.gz)',
       'cloudflow.download.linuxArm': 'Linux (ARM64)',
+      'cloudflow.download.linuxArmTitle': 'Linux (ARM64)',
       'cloudflow.download.linuxArmDesc': '树莓派 / ARM 服务器',
       'cloudflow.download.linuxArmBtn': '下载 (.tar.gz)',
       'cloudflow.download.docker': 'Docker',
+      'cloudflow.download.dockerTitle': 'Docker',
       'cloudflow.download.dockerDesc': '一键部署容器化版本',
       'cloudflow.download.dockerBtn': 'docker pull',
       'cloudflow.download.reqTitle': '系统要求',
       'cloudflow.download.req1': '操作系统：Linux (内核 4.15+)',
       'cloudflow.download.req2': '内存：最低 512MB（推荐 2GB）',
       'cloudflow.download.req3': '磁盘：至少 1GB 可用空间（含数据存储）',
+      'cloudflow.download.req4': '网络：需要稳定网络连接接收告警通知',
+      'cloudflow.download.req5': '浏览器：推荐 Chrome / Firefox / Edge 最新版',
+      'cloudflow.download.reqTitle': '系统要求',
 
       /* ─── CloudFlow 主页特性 ─── */
       'cloudflow.feature1Title': '实时监控',
@@ -319,6 +335,9 @@ const i18n = (() => {
       'jmcl.download.req1': '运行时：Java 17+（推荐 Java 21）',
       'jmcl.download.req2': '操作系统：Windows 10+ / macOS 12+ / Linux (内核 5.0+)',
       'jmcl.download.req3': '内存：最低 2GB（推荐 4GB）',
+      'jmcl.download.req4': '磁盘：至少 200MB 可用空间（不含 Minecraft 游戏文件）',
+      'jmcl.download.req5': '显卡：支持 OpenGL 3.2+',
+      'jmcl.download.reqTitle': '运行环境',
 
       /* ─── JMCL 主页特性 ─── */
       'jmcl.feature1Title': '多版本管理',
