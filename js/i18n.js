@@ -200,8 +200,6 @@ const i18n = (() => {
       'openkit.download.cliTitle': '独立 CLI 工具',
       'openkit.download.cliDesc': '全局安装后可直接使用 openkit 命令',
       'openkit.download.cliBtn': 'npm install -g @open-kit/cli',
-      'openkit.download.cliDesc': '全局安装命令行工具',
-      'openkit.download.cliBtn': 'npm install -g @open-kit/cli',
       'openkit.download.source': '源码构建',
       'openkit.download.sourceDesc': '从 GitHub 克隆并构建',
       'openkit.download.sourceBtn': '查看源码',
