@@ -20,16 +20,16 @@
         <img class="nav-logo-icon" src="../png/91686373-09E8-47F9-86B2-0ADECD55A458_1_201_a.jpeg" alt="OCS">
         Open Code Studio
       </a>
-      <button class="nav-toggle" aria-label="菜单">
+      <button class="nav-toggle" aria-label="菜单" data-i18n-aria="nav.menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav-links">
-        <li><a href="../../../page/index.html">首页</a></li>
-        <li><a href="../../../page/projects.html" class="active">核心项目</a></li>
-        <li><a href="../../../page/entries.html">常用入口</a></li>
-        <li><a href="../../../page/about.html">关于我们</a></li>
+        <li><a href="../../../page/index.html" data-i18n="nav.home">首页</a></li>
+        <li><a href="../../../page/projects.html" class="active" data-i18n="nav.projects">核心项目</a></li>
+        <li><a href="../../../page/entries.html" data-i18n="nav.entries">常用入口</a></li>
+        <li><a href="../../../page/about.html" data-i18n="nav.about">关于我们</a></li>
       </ul>
       <div class="lang-switch-wrapper">
         <button class="lang-switch" onclick="i18n.toggleLanguage()">EN</button>
@@ -49,9 +49,9 @@
 
   <div class="project-subnav">
     <div class="project-subnav-inner">
-      <a href="index.html">项目主页</a>
-      <a href="intro.html">详细介绍</a>
-      <a href="download.html" class="active">下载</a>
+      <a href="index.html" data-i18n="subnav.home">项目主页</a>
+      <a href="intro.html" data-i18n="subnav.intro">详细介绍</a>
+      <a href="download.html" class="active" data-i18n="subnav.download">下载</a>
     </div>
   </div>
 
@@ -59,28 +59,28 @@
     <div class="project-hero-inner">
       <div class="project-hero-badge">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        下载
+        <span data-i18n="project.hero.download">下载</span>
       </div>
-      <h1>下载 CodeApp</h1>
-      <p class="project-subtitle">选择适合你平台的版本，开始高效的编码体验</p>
+      <h1 data-i18n="codeapp.download.title">下载 CodeApp</h1>
+      <p class="project-subtitle" data-i18n="codeapp.download.subtitle">选择适合你平台的版本，开始高效的编码体验</p>
     </div>
   </div>
 
   <div class="project-section fade-in" style="padding-top:0">
     <div class="project-section-inner">
       <div class="project-section-header">
-        <span class="section-number">/ 最新版本</span>
+        <span class="section-number" data-i18n="project.section.latestVersion">/ 最新版本</span>
         <h2>v0.5.0</h2>
-        <p>2026 年 5 月发布 ｜ 包含插件系统与性能优化</p>
+        <p data-i18n="codeapp.download.versionDesc">2026 年 5 月发布 ｜ 包含插件系统与性能优化</p>
       </div>
       <div class="features-grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
         <div class="feature-card fade-in" style="text-align:center;padding:36px 28px">
           <div class="feature-card-icon" style="margin:0 auto 16px">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
           </div>
-          <h4>Windows</h4>
-          <p style="font-size:12px;margin-bottom:20px">Windows 10 / 11 (x64)</p>
-          <a href="#" class="btn btn-primary" style="font-size:13px;padding:10px 24px">
+          <h4 data-i18n="codeapp.download.win">Windows</h4>
+          <p style="font-size:12px;margin-bottom:20px" data-i18n="codeapp.download.winDesc">Windows 10 / 11 (x64)</p>
+          <a href="#" class="btn btn-primary" style="font-size:13px;padding:10px 24px" data-i18n="codeapp.download.winBtn">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             下载 (.exe)
           </a>
