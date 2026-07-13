@@ -1,3 +1,4 @@
+/* ─── Nav Toggle ─── */
 const toggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
@@ -13,28 +14,18 @@ document.querySelectorAll('.nav-links a').forEach(link => {
   });
 });
 
+/* ─── Scroll Reveal ─── */
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
     }
   });
-}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.1, rootMargin: '0px 0px -20px 0px' });
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-const nav = document.querySelector('nav');
-
-window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset;
-  if (currentScroll > 60) {
-    nav.style.borderColor = 'rgba(79, 140, 255, 0.2)';
-  } else {
-    nav.style.borderColor = 'rgba(79, 140, 255, 0.12)';
-  }
-}, { passive: true });
-
-/* ─── Language switch dropdown ─── */
+/* ─── Language Dropdown ─── */
 document.addEventListener('click', (e) => {
   const dropdown = document.querySelector('.lang-dropdown');
   const btn = document.querySelector('.lang-switch');
