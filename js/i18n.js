@@ -19,6 +19,7 @@ const i18n = (() => {
       'footer.tagline': '一群热爱技术的学生团队，致力打造稳定高效的跨平台工具。',
       'footer.github': 'GitHub',
       'footer.about': '关于我们',
+      'footer.discord': 'Discord',
       'footer.joinGroup': '加入交流群',
       'footer.copyright': '© 2026 Open Code Studio. All rights reserved.',
 
@@ -68,6 +69,7 @@ const i18n = (() => {
       'about.desc': '一群热爱技术的学生团队，喜欢制作应用、游戏和 MC 地图。',
       'about.content': 'Open Code Studio 源自于对开发工具的追求。我们是一群热爱技术的学生（初中生），致力于打造稳定、高效、可长期维护的开源工具生态。无论是代码协作、监控面板还是工具链，我们都以最高标准要求自己，让每一位开发者都能享受技术带来的纯粹乐趣。',
       'about.contact': '联系方式',
+      'about.discord': 'Discord',
       'about.joinCommunity': '加入社区交流群',
 
       /* ─── 项目子导航 ─── */
@@ -366,6 +368,7 @@ const i18n = (() => {
       'footer.tagline': 'A student team passionate about technology, building stable and efficient cross-platform tools.',
       'footer.github': 'GitHub',
       'footer.about': 'About',
+      'footer.discord': 'Discord',
       'footer.joinGroup': 'Join Group',
       'footer.copyright': '© 2026 Open Code Studio. All rights reserved.',
 
@@ -415,6 +418,7 @@ const i18n = (() => {
       'about.desc': 'A student team passionate about technology, who love building apps, games, and MC maps.',
       'about.content': 'Open Code Studio was born from the pursuit of excellent development tools. We are a team of students passionate about technology, dedicated to building a stable, efficient, and maintainable open-source tool ecosystem. Whether it is code collaboration, monitoring dashboards, or toolchains, we hold ourselves to the highest standards.',
       'about.contact': 'Contact',
+      'about.discord': 'Discord',
       'about.joinCommunity': 'Join Our Community',
 
       /* ─── Project Subnav ─── */
