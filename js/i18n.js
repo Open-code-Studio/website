@@ -20,7 +20,7 @@ const i18n = (() => {
       'footer.github': 'GitHub',
       'footer.about': '关于我们',
       'footer.discord': 'Discord',
-      'footer.joinGroup': '加入交流群',
+      'footer.qqGroup': 'QQ群',
       'footer.copyright': '© 2026 Open Code Studio. All rights reserved.',
 
       /* ─── 首页 ─── */
@@ -70,7 +70,7 @@ const i18n = (() => {
       'about.content': 'Open Code Studio 源自于对开发工具的追求。我们是一群热爱技术的学生（初中生），致力于打造稳定、高效、可长期维护的开源工具生态。无论是代码协作、监控面板还是工具链，我们都以最高标准要求自己，让每一位开发者都能享受技术带来的纯粹乐趣。',
       'about.contact': '联系方式',
       'about.discord': 'Discord',
-      'about.joinCommunity': '加入社区交流群',
+      'about.qqGroup': 'QQ群',
 
       /* ─── 项目子导航 ─── */
       'subnav.home': '项目主页',
@@ -369,7 +369,7 @@ const i18n = (() => {
       'footer.github': 'GitHub',
       'footer.about': 'About',
       'footer.discord': 'Discord',
-      'footer.joinGroup': 'Join Group',
+      'footer.qqGroup': 'QQ Group',
       'footer.copyright': '© 2026 Open Code Studio. All rights reserved.',
 
       /* ─── Home ─── */
@@ -419,7 +419,7 @@ const i18n = (() => {
       'about.content': 'Open Code Studio was born from the pursuit of excellent development tools. We are a team of students passionate about technology, dedicated to building a stable, efficient, and maintainable open-source tool ecosystem. Whether it is code collaboration, monitoring dashboards, or toolchains, we hold ourselves to the highest standards.',
       'about.contact': 'Contact',
       'about.discord': 'Discord',
-      'about.joinCommunity': 'Join Our Community',
+      'about.qqGroup': 'QQ Group',
 
       /* ─── Project Subnav ─── */
       'subnav.home': 'Home',
