@@ -19,11 +19,11 @@
   --text-secondary: #A0A0A0;
   --text-tertiary: #6B6B6B;
 
-  /* Accent — Cyan */
-  --accent: #00BCD4;
-  --accent-hover: #00ACC1;
-  --accent-muted: rgba(0, 188, 212, 0.10);
-  --accent-muted-hover: rgba(0, 188, 212, 0.16);
+  /* Accent — Green */
+  --accent: #4AA26F;
+  --accent-hover: #3D8F5F;
+  --accent-muted: rgba(74, 162, 111, 0.10);
+  --accent-muted-hover: rgba(74, 162, 111, 0.16);
 
   /* Status */
   --status-active: #4CAF50;
@@ -36,7 +36,7 @@
   /* Borders */
   --border: rgba(255, 255, 255, 0.06);
   --border-hover: rgba(255, 255, 255, 0.12);
-  --border-accent: rgba(0, 188, 212, 0.20);
+  --border-accent: rgba(74, 162, 111, 0.20);
 
   /* Spacing — 4px base grid */
   --space-1: 4px;
@@ -418,7 +418,7 @@ main {
 }
 
 .hero h1 .gradient-text {
-  background: linear-gradient(135deg, var(--accent), #4DD0E1);
+  background: linear-gradient(135deg, var(--accent), #6BC48D);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
